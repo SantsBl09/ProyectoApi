@@ -8,6 +8,6 @@ def consultar_casos_covid(departamento, limite):
         limit=limite,
         departamento=departamento.upper()
     )
-
+    
     df = pd.DataFrame.from_records(resultados)
     return df
